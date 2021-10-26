@@ -1,11 +1,13 @@
 {
-  "name": "serverless-http-api-dynamodb",
+  "name": "serverless-http-api",
   "version": "1.0.0",
   "description": "Serverless CRUD service exposing a REST HTTP interface",
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "got": "^11.8.2"
+    "got": "^11.8.2",
+    "serverless-http": "2.7.0",
+    "express": "4.17.1"
   },
   "devDependencies": {
     "serverless-plugin-include-dependencies": "^5.0.0"
