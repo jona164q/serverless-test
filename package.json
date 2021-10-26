@@ -1,0 +1,13 @@
+{
+  "name": "serverless-http-api-dynamodb",
+  "version": "1.0.0",
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "serverless-plugin-include-dependencies": "^5.0.0"
+  }
+}

@@ -1,0 +1,31 @@
+org: jona164q
+app: akamaiapi
+service: my-express-application
+
+package:
+  excludeDevDependencies: false
+
+  
+
+plugins:
+  - serverless-plugin-include-dependencies
+
+custom:
+  webpack:
+    includeModules:
+      packagePath: './package.json' 
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: eu-central-1
+
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+
